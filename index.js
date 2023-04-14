@@ -2,12 +2,13 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
 
-let limit = 1;
+let limit = 3;
 let offset = 0;
+let newLimit = 0;
 
-loadMoreButton.addEventListener('click', function() {
-    limit += 10
-    loadPokemonItems(offset, limit)
+loadMoreButton.addEventListener('click', function() {    
+    newLimit += limit
+    loadPokemonItems(offset, newLimit)
 })
 
 
