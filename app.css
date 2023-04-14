@@ -1,0 +1,69 @@
+.Bug {
+    color: #3B9950;
+    background-color: #1C4B27;
+}
+
+.Fire {
+    color: #FD4C5A;
+    background-color: #AA1F23;
+}
+
+.Water {
+    color: #86A8FC;
+    background-color: #1552E2;
+}
+
+.Normal {
+    color: #CA98A7;
+    background-color: #75515B;
+}
+
+.Grass {
+    color: #27CB4F;
+    background-color: #147B3D;
+}
+
+.Electric {
+    color: #FBFB72;
+    background-color: #E2E42B;
+}
+
+.Dark {
+    color: #5A5979;
+    background-color: #040706;
+}
+
+.Dragon {
+    color: #61CAD9;
+    background-color: #448B95;
+}
+
+.Fairy {
+    color: #EA1369;
+    background-color: #961A44;
+}
+
+.Fighting {
+    color: #EF6138;
+    background-color: #994025;
+}
+
+.Flying {
+    color: #93B2C7;
+    background-color: #4A677D;
+}
+
+.Ghost {
+    color: #906790;
+    background-color: #33336B;
+}
+
+.Poison {
+    color: #9B69D9;
+    background-color: #5E2D88;
+}
+
+.Ground {
+    color: #6E491F;
+    background-color: #A9702C;
+}
