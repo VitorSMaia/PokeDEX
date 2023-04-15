@@ -1,7 +1,7 @@
 
 ![alt text](https://raw.githubusercontent.com/VitorSMaia/PokeDEX/master/assets/img/Pokémon_Go_logo.png)
 
-#Poke Api
+# Poke Api
 ______________________________________
 
 O arquivo HTML que cria uma página da web simples para exibir uma lista de pokémons usando a API do **PokéAPI**. A página usa uma combinação de HTML, CSS e JavaScript para exibir os dados.
@@ -12,7 +12,7 @@ O código JavaScript é responsável por obter dados da API do **PokéAPI**, con
 
 Ao personalizar este código para o seu próprio projeto, você pode modificar o layout, estilo e comportamento da página para atender às suas necessidades. Você também pode usar outras APIs de terceiros para buscar dados relevantes para o seu projeto e exibi-los na página.
 
-###poke-api.js
+### poke-api.js
 
 ______________________________________
 
