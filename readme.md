@@ -1,4 +1,5 @@
-<img src="https://d1unuvan7ts7ur.cloudfront.net/0x718/filters:strip_exif()/a014fb64-2cf2-4382-bb75-77d808d5c1f4/01GY2YAFC8WGBP9KE88HXTTQ8E">
+
+![alt text](https://raw.githubusercontent.com/VitorSMaia/PokeDEX/master/assets/img/Pokémon_Go_logo.png)
 
 #Poke Api
 ______________________________________
