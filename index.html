@@ -9,12 +9,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body class="">
+<body class="p-2 md:p-5 bg-red-500">
+    <div class="flex justify-center items-center pb-28">
+        <img class="absolute -top-10 h-72 " src="https://cdn.shopify.com/s/files/1/0555/7708/3985/files/Pokedex_Logo2.png?v=1647303194" alt="">
+    </div>
+    <div class="bg-white rounded-lg p-1 md:p-5">
         <ol id="pokemonList" class="grid grid-cols-1 md:grid-cols-4 gap-5 m-10">
-        
+    
         </ol>
-    <div class="flex justify-center items-center mb-5">
-        <button class="rounded-lg px-3 py-1 bg-gray-300" id="loadMoreButton" type="submit">Load More</button>
+        <div class="flex justify-center items-center mb-5">
+            <button class="rounded-lg px-3 py-1 bg-gray-300" id="loadMoreButton" type="submit">Load More</button>
+        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>
