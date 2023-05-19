@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>Pokédex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 0.75rem;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #040706;
+            border-radius: 0.75rem;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #E2E42B;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
 </head>
-<body class="p-2 md:p-5 bg-red-500">
-    <div class="flex justify-center items-center pb-28">
-        <img class="absolute -top-10 h-72 " src="https://cdn.shopify.com/s/files/1/0555/7708/3985/files/Pokedex_Logo2.png?v=1647303194" alt="">
-    </div>
-    <div class="bg-white rounded-lg p-1 md:p-5">
-        <ol id="pokemonList" class="grid grid-cols-1 md:grid-cols-4 gap-5 m-10">
-    
-        </ol>
-        <div class="flex justify-center items-center mb-5">
-            <button class="rounded-lg px-3 py-1 bg-gray-300" id="loadMoreButton" type="submit">Load More</button>
+
+<body class="bg-[#C12026] h-screen w-screen bg-contain bg-no-repeat object-cover overflow-hidden">
+    <div class="container mx-auto py-8 overflow-x-hidden overflow-y-scroll h-[600px] mt-5">
+        <img src="./assets/img/Pokémon_Go_logo.png" alt="Pokémon" class="md:fixed md:w-max mb-5 z-10 w-full object-contain  h-40">
+        <div x-data="{ open: false }" class="px-5">
+            <button @click="open = true" id="loadMoreButton"
+                    class="bg-yellow-400 text-white px-4 py-2 mx-5 mb-5 rounded-md hover:bg-yellow-500 transition-colors duration-300 absolute z-10 bottom-0 left-0 right-0 md:end-3/4 ">Load Pokemon</button>
+            <div x-show="open" id="pokemonList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 md:ml-80 gap-5">
+                <!-- Pokémon Card -->
+
+                <!-- End Pokémon Card -->
+                <!-- Repeat the above Pokémon Card as needed -->
+            </div>
         </div>
     </div>
-
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/poke-api.js"></script>
     <script src="./assets/js/pokemon-model.js"></script>
 </body>
+
 </html>

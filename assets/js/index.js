@@ -14,7 +14,6 @@ loadMoreButton.addEventListener('click', function() {
 function loadPokemonItems(offset,limit) {
 
     PokeApi.getPokemons(offset,limit).then((PokeApiList = []) => {
-
         pokemonList.innerHTML = PokeApiList.map((pokemon) => convertToHTML(pokemon)).join('');
     })
     
@@ -22,22 +21,16 @@ function loadPokemonItems(offset,limit) {
 
 
 function convertToHTML(pokemon) {
-    return `<li class=' ${pokemon.type} rounded-lg p-2'>
-    <div class=''>
-      <div class='flex justify-between items-center'>
-      <p class="text-lg">${pokemon.name}</p>
-      <p class="text-xs">#${pokemon.number}</p>
-      </div>
-      <div class="grid grid-cols-2">
-        <div class="flex flex-wrap justify-start gap-2">
-        ${ pokemon.types.map((type) => `<p class="px-3 text-sm w-max h-max rounded-full font-thin shadow-xl border-2 border-gray-300 ${type}">${type}</p>`).join('')}
-        </div>
-        <div class="flex justify-end items-center">
-          <img class="h-40 w-40 drop-shadow-2xl" src="${pokemon.img}"
-        </div>
-      </div>
-    </div>
-</li>`
+    return `<div class="bg-white rounded-md shadow-md p-4 flex flex-col justify-between transform hover:scale-105 transition-transform duration-300">
+                <div>
+                    <img src="${pokemon.img}" alt="${pokemon.name}" class="mx-auto h-40">
+                    <h2 class="text-xl font-bold text-center mt-4">${pokemon.name}</h2>
+                    <p class="text-gray-700 text-center">Types: ${ pokemon.types.map((type) => `${type}`).join(',')} </p>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 transition-colors duration-300">
+                    View Details
+                </button>
+            </div>`
 }
 
 
