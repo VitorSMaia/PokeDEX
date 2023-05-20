@@ -1,6 +1,5 @@
 
-![alt text](https://raw.githubusercontent.com/VitorSMaia/PokeDEX/master/assets/img/Pokémon_Go_logo.png)
-
+<img src="https://github.com/VitorSMaia/PokeDEX/blob/master/assets/img/pokedex.gif">
 # Poke Api
 ______________________________________
 
