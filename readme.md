@@ -1,9 +1,12 @@
 
-<img src="https://github.com/VitorSMaia/PokeDEX/blob/master/assets/img/pokedex.gif">
-# Poke Api
-______________________________________
+<img src="https://github.com/VitorSMaia/PokeDEX/blob/master/assets/img/pokedex.gif"/>
+______________________________________________________________________________________________________________________________
+
+### Poke Api <br>
 
 O arquivo HTML que cria uma página da web simples para exibir uma lista de pokémons usando a API do **PokéAPI**. A página usa uma combinação de HTML, CSS e JavaScript para exibir os dados.
+
+
 
 Ao abrir a página em um navegador, a lista de pokémons é exibida em um layout de grade, usando o TailwindCSS para ajudar a estilizar a página. Há também um botão **"Load More"** que permite carregar mais pokémons na lista.
 
